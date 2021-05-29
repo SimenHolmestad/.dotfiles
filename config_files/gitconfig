@@ -1,0 +1,7 @@
+[user]
+	name = Simen Holmestad
+	email = simehol@stud.ntnu.no
+[credential]
+	helper = osxkeychain
+[github]
+	user = SimenHolmestad

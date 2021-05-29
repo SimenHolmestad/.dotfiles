@@ -1,0 +1,39 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: config_files/zshrc
+    ~/.gitconfig: config_files/gitconfig
+    ~/.config/karabiner/karabiner.json: config_files/karabiner.json
+
+- shell:
+  -
+    command: sh ./install_scripts/install_homebrew.sh
+    description: Installing homebrew
+
+- shell:
+  -
+    command: brew bundle
+    stdin: true
+    stdout: true
+    description: Installing homebrew packages
+    quiet: false
+
+- shell:
+  -
+    command: sh ./install_scripts/setup_doom_emacs.sh
+    stdin: true
+    stdout: true
+    description: Setting up Doom Emacs
+    quiet: false
+
+- shell:
+  -
+    command: sh .macos
+    stdin: true
+    stdout: true
+    description: Changing mac os default settings
+    quiet: false
