@@ -14,6 +14,7 @@ set surround
 set commentary
 set argtextobj
 set easymotion
+set EasyMotion_do_mapping
 set textobj-entire
 set ReplaceWithRegister
 set NERDTree
