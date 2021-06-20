@@ -1,0 +1,59 @@
+"" Map leader to space ---------------------
+let mapleader=" "
+
+"" Common settings -------------------------
+
+set relativenumber
+set nu
+set noerrorbells
+set scrolloff=4
+set incsearch
+
+"" Plugins  --------------------------------
+set surround
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set NERDTree
+
+"" Custom commands -------------------------
+map ø <Plug>(easymotion-s)
+
+"" window movement
+map <leader>wv <C-w>v
+map <leader>ws <C-w>s
+map <leader>wh <C-w>h
+map <leader>wj <C-w>j
+map <leader>wk <C-w>k
+map <leader>wl <C-w>l
+map <leader>wo <C-w>o
+map <leader>wd <C-w>c
+
+"" tab movement
+map <leader>ed <Action>(CloseContent)
+map <leader>el <Action>(NextTab)
+map <leader>eh <Action>(PreviousTab)
+map <leader>æ :NERDTreeClose<CR>
+
+"" Same as in emacs
+map <C-g> <Esc>
+map <leader>fs <Action>(SaveAll)
+map <leader><leader> <Action>(GotoFile)
+map <leader>ff :NERDTree<CR>
+imap <C-BS> <C-W>
+
+"" Project stuff
+map <leader>cc <Action>(Run)
+map <leader>cd <Action>(Debug)
+map <leader>cr <Action>(RenameElement)
+map <leader>cs <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>b <Action>(ToggleLineBreakpoint)
+
+"" Git stuff
+map <leader>gB <Action>(Annotate)
+map <leader>gL <Action>(Vcs.ShowTabbedFileHistory)

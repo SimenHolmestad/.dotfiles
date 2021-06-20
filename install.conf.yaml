@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc: config_files/zshrc
     ~/.gitconfig: config_files/gitconfig
+    ~/.ideavimrc: config_files/ideavimrc
 
 - shell:
   -
