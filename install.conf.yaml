@@ -7,7 +7,6 @@
 - link:
     ~/.zshrc: config_files/zshrc
     ~/.gitconfig: config_files/gitconfig
-    ~/.config/karabiner/karabiner.json: config_files/karabiner.json
 
 - shell:
   -
@@ -21,6 +20,9 @@
     stdout: true
     description: Installing homebrew packages
     quiet: false
+
+- link:
+    ~/.config/karabiner/karabiner.json: config_files/karabiner.json
 
 - shell:
   -
