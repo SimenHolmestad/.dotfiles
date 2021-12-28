@@ -104,7 +104,7 @@
                                     "key_code": "delete_or_backspace",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_control"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -115,7 +115,7 @@
                                     {
                                         "key_code": "delete_or_backspace",
                                         "modifiers": [
-                                            "option"
+                                            "right_option"
                                         ]
                                     }
                                 ],
